@@ -94,6 +94,7 @@ namespace Ogre
     const char *PbsProperty::SpecularMap        = "specular_map";
     const char *PbsProperty::RoughnessMap       = "roughness_map";
     const char *PbsProperty::EmissiveMap        = "emissive_map";
+    const char *PbsProperty::HeightmapMap       = "height_map";
     const char *PbsProperty::EnvProbeMap        = "envprobe_map";
     const char *PbsProperty::DetailWeightMap    = "detail_weight_map";
     const char *PbsProperty::DetailMapN         = "detail_map";     //detail_map0-4
@@ -147,6 +148,7 @@ namespace Ogre
     const IdString PbsProperty::UvDetailNm2       = IdString( "uv_detail_nm2" );
     const IdString PbsProperty::UvDetailNm3       = IdString( "uv_detail_nm3" );
     const IdString PbsProperty::UvEmissive        = IdString( "uv_emissive" );
+    const IdString PbsProperty::UvHeightmap       = IdString( "uv_heightmap" );
 
     const IdString PbsProperty::BlendModeIndex0   = IdString( "blend_mode_idx0" );
     const IdString PbsProperty::BlendModeIndex1   = IdString( "blend_mode_idx1" );
@@ -218,6 +220,7 @@ namespace Ogre
         &PbsProperty::UvDetailNm2,
         &PbsProperty::UvDetailNm3,
         &PbsProperty::UvEmissive,
+        &PbsProperty::UvHeightmap
     };
 
     const IdString *PbsProperty::DetailNormalWeights[4] =
@@ -700,6 +703,7 @@ namespace Ogre
             setTextureProperty( PbsProperty::SpecularMap,   datablock,  PBSM_SPECULAR );
             setTextureProperty( PbsProperty::RoughnessMap,  datablock,  PBSM_ROUGHNESS );
             setTextureProperty( PbsProperty::EmissiveMap,   datablock,  PBSM_EMISSIVE );
+            setTextureProperty( PbsProperty::HeightmapMap,  datablock,  PBSM_HEIGHTMAP );
             setTextureProperty( PbsProperty::EnvProbeMap,   datablock,  PBSM_REFLECTION );
             setTextureProperty( PbsProperty::DetailWeightMap,datablock, PBSM_DETAIL_WEIGHT );
 

@@ -180,6 +180,7 @@
 		@property( detail_map_nm2 )		ushort texIndex_detailNormMapIdx2	= material.detailNormMapIdx2;@end
 		@property( detail_map_nm3 )		ushort texIndex_detailNormMapIdx3	= material.detailNormMapIdx3;@end
 		@property( emissive_map )		ushort texIndex_emissiveMapIdx		= material.emissiveMapIdx;@end
+		@property( height_map )			ushort texIndex_heightmapIdx		= material.heightmapIdx;@end
 		@property( use_envprobe_map )	ushort texIndex_envMapIdx			= material.envMapIdx;@end
 	@else
 		@property( normal_map_tex )		ushort texIndex_normalIdx			= material.indices0_3.x >> 16u;@end
@@ -190,7 +191,8 @@
 		@property( detail_map_nm2 )		ushort texIndex_detailNormMapIdx2	= material.indices4_7.y >> 16u;@end
 		@property( detail_map_nm3 )		ushort texIndex_detailNormMapIdx3	= material.indices4_7.z & 0x0000FFFFu;@end
 		@property( emissive_map )		ushort texIndex_emissiveMapIdx		= material.indices4_7.z >> 16u;@end
-		@property( use_envprobe_map )	ushort texIndex_envMapIdx			= material.indices4_7.w & 0x0000FFFFu;@end
+		@property( height_map )			ushort texIndex_heightmapIdx		= material.indices4_7.w & 0x0000FFFFu;@end;
+		@property( use_envprobe_map )	ushort texIndex_envMapIdx			= material.indices4_7.w >> 16u;@end
 	@end
 @end
 

@@ -199,6 +199,8 @@ namespace Ogre
             setTexture( PBSM_ROUGHNESS, paramVal );
         if( Hlms::findParamInVec( params, "emissive_map", paramVal ) )
             setTexture( PBSM_EMISSIVE, paramVal );
+        if( Hlms::findParamInVec( params, "height_map", paramVal ) )
+            setTexture( PBSM_HEIGHTMAP, paramVal );
         if( Hlms::findParamInVec( params, "detail_weight_map", paramVal ) )
             setTexture( PBSM_DETAIL_WEIGHT, paramVal );
         if( Hlms::findParamInVec( params, "reflection_map", paramVal ) )

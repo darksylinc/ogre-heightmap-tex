@@ -423,6 +423,7 @@ namespace Ogre
         static const char *SpecularMap;
         static const char *RoughnessMap;
         static const char *EmissiveMap;
+        static const char *HeightmapMap;
         static const char *EnvProbeMap;
         static const char *DetailWeightMap;
         static const char *DetailMapN;
@@ -479,6 +480,7 @@ namespace Ogre
         static const IdString UvDetailNm3;
 
         static const IdString UvEmissive;
+        static const IdString UvHeightmap;
         static const IdString EmissiveConstant;
         static const IdString EmissiveAsLightmap;
         static const IdString DetailMapsDiffuse;

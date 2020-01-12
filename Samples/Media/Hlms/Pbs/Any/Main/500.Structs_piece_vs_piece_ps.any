@@ -272,6 +272,7 @@ struct Material
 
 		ushort detailNormMapIdx3;
 		ushort emissiveMapIdx;
+		ushort heightmapIdx;
 		ushort envMapIdx;
 	@end
 

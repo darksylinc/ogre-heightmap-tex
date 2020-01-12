@@ -825,6 +825,9 @@ namespace Ogre
                          pbsDatablock, outString );
         }
 
+        if( pbsDatablock->getTexture( PBSM_HEIGHTMAP ) )
+            saveTexture( "heightmap", PBSM_HEIGHTMAP, pbsDatablock, outString );
+
         if( pbsDatablock->getTexture( PBSM_REFLECTION ) )
             saveTexture( "reflection", PBSM_REFLECTION, pbsDatablock, outString );
     }
